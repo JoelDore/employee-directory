@@ -1,19 +1,8 @@
 import React from "react";
-import User from "./components/User";
+import DirectoryContainer from "./components/DirectoryContainer";
 
 function App() {
-  return (
-    <div className="App">
-      <User
-        picture={{ medium: "" }}
-        name={{ first: "", last: "" }}
-        id={{ value: "" }}
-        location={{ street: "", city: "", state: "", postcode: "" }}
-        email=""
-        phone=""
-      />
-    </div>
-  );
+  return <DirectoryContainer />;
 }
 
 export default App;
