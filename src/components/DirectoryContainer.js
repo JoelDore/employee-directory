@@ -15,22 +15,26 @@ class DirectoryContainer extends Component {
   getUsers = number => {
     API.getUsers(number)
       .then((res) => {
-        const users = res.data.results;
-        this.setState({ users: users })
+        this.setState({ users: res.data.results })
       })
-      .catch(err => console.log(err))
+      .catch(err => console.log("getUsers Error: ", err))
   }
 
   render() {
     return (
-      <User
-        picture={{ medium: "" }}
-        name={{ first: "", last: "" }}
-        id={{ value: "" }}
-        location={{ street: "", city: "", state: "", postcode: "" }}
-        email=""
-        phone=""
-      />
+      <div>
+        {this.state.users.map((user) => (
+          <User
+            key={user.login.uuid}
+            picture={user.picture}
+            name={user.name}
+            id={user.id}
+            location={user.location}
+            email={user.email}
+            phone={user.phone}
+          />
+        ))}
+      </div>
     );
   }
 }
