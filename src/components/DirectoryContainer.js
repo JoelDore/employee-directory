@@ -3,6 +3,8 @@ import User from "./User";
 import Table from "./Table";
 import API from "../utils/API";
 import Header from "./Header";
+import Sort from "./Sort";
+import Filter from "./Filter";
 
 class DirectoryContainer extends Component {
   state = {
@@ -26,6 +28,7 @@ class DirectoryContainer extends Component {
     return (
       <div className="container-fluid h-100 py-3 bg-info p-0">
         <Header heading="Employee Directory" />
+        <Sort />
         <Table>
           {this.state.users.map((user) => (
             <User
