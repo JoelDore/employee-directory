@@ -2,6 +2,10 @@ import axios from "axios";
 
 const URL = "https://randomuser.me/api/?results=";
 
-const getUser = (number) => axios.get(URL + number);
+// const getUsers = (number) => axios.get(URL + number);
 
-export default getUser
+export default {
+    getUsers: function (number) {
+        return axios.get(URL + number)
+    }
+}
