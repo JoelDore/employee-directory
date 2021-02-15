@@ -25,6 +25,7 @@ class DirectoryContainer extends Component {
   render() {
     return (
       <div className="p-0">
+        <Header heading="Employee Directory" />
         <Table>
           {this.state.users.map((user) => (
             <User
