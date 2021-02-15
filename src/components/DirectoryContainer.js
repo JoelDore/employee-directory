@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import User from "./User";
+import Table from "./Table";
 import API from "../utils/API";
+import Header from "./Header";
 
 class DirectoryContainer extends Component {
   state = {
@@ -22,18 +24,20 @@ class DirectoryContainer extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.users.map((user) => (
-          <User
-            key={user.login.uuid}
-            picture={user.picture}
-            name={user.name}
-            id={user.id}
-            location={user.location}
-            email={user.email}
-            phone={user.phone}
-          />
-        ))}
+      <div className="p-0">
+        <Table>
+          {this.state.users.map((user) => (
+            <User
+              key={user.login.uuid}
+              picture={user.picture}
+              name={user.name}
+              id={user.id}
+              location={user.location}
+              email={user.email}
+              phone={user.phone}
+            />
+          ))}
+        </Table>
       </div>
     );
   }
