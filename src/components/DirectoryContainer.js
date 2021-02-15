@@ -29,6 +29,7 @@ class DirectoryContainer extends Component {
       <div className="container-fluid h-100 py-3 bg-info p-0">
         <Header heading="Employee Directory" />
         <Sort />
+        <Filter key={1} users={this.state.users} />
         <Table>
           {this.state.users.map((user) => (
             <User
