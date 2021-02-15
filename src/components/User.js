@@ -14,7 +14,7 @@ function User({ picture, name, id, location, email, phone }) {
         </div>
         <div className="col-8 col-sm-auto mr-sm-auto">
           <h3>{name.first} {name.last}</h3>
-          <h5 class="text-muted">ID: {id.value}</h5>
+          <h5 className="text-muted">ID: {id.value}</h5>
         </div>
         <div className="col-11 col-sm-auto my-3 my-sm-0 mr-sm-auto border-left border-secondary">
           <address>
