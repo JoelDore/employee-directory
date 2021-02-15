@@ -4,7 +4,7 @@ function User({ picture, name, id, location, email, phone }) {
   return (
     <div className="User card w-100 my-3">
       <div className="row card-body justify-content-center align-items-center">
-        <div className="col-auto">
+        <div className="col-4 col-sm-auto">
           <img
             src={picture.large}
             width={100}
@@ -12,11 +12,11 @@ function User({ picture, name, id, location, email, phone }) {
             alt={`${name.first} ${name.last}: ${picture.large}`}
           />
         </div>
-        <div className="col-auto">
-          <h2>{name.first} {name.last}</h2>
-          <h4>ID: {id.value}</h4>
+        <div className="col-8 col-sm-auto">
+          <h3>{name.first} {name.last}</h3>
+          <h5 class="text-muted">ID: {id.value}</h5>
         </div>
-        <div className="col-auto border-left border-secondary">
+        <div className="col-11 col-sm-auto mt-3 border-left border-secondary">
           <address>
             {location.street.number} {location.street.name}
             <br />
