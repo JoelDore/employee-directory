@@ -24,7 +24,7 @@ class DirectoryContainer extends Component {
 
   render() {
     return (
-      <div className="p-0">
+      <div className="container-fluid h-100 py-3 bg-info p-0">
         <Header heading="Employee Directory" />
         <Table>
           {this.state.users.map((user) => (
