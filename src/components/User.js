@@ -6,10 +6,11 @@ function User({ picture, name, id, location, email, phone }) {
       <div className="row card-body justify-content-center align-items-center">
         <div className="col-auto">
           <img
-            src={picture.medium}
+            src={picture.large}
+            width={100}
             className="rounded-circle"
-            alt={name.first + name.last}
-          ></img>
+            alt={`${name.first} ${name.last}: ${picture.large}`}
+          />
         </div>
         <div className="col-auto">
           <h2>{name.first} {name.last}</h2>
@@ -17,7 +18,7 @@ function User({ picture, name, id, location, email, phone }) {
         </div>
         <div className="col-auto border-left border-secondary">
           <address>
-            {location.street}
+            {location.street.number} {location.street.name}
             <br />
             {location.city}, {location.state} {location.postcode}
           </address>
