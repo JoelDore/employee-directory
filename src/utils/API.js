@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "https://randomuser.me/api/?nat=US&results=";
+const URL = "https://randomuser.me/api/?nat=US&noinfo&results=";
 
 // const getUsers = (number) => axios.get(URL + number);
 
