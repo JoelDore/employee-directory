@@ -6,6 +6,29 @@ import Header from "./Header";
 import Sort from "./Sort";
 import Filter from "./Filter";
 
+function sortArrByValue(arr = [], value = "") {
+  arr.sort((a, b) => {
+    let sorter = 0;
+    switch (value) {
+      case "firstName":
+        a.name.first < b.name.first ? --sorter : ++sorter
+        break
+
+      case "lastName":
+        a.name.last < b.name.last ? --sorter : ++sorter
+        break
+
+      case "id":
+        a.id.value < b.id.value ? --sorter : ++sorter
+        break
+
+      default: break;
+    }
+    return sorter
+  })
+  return arr
+}
+
 class DirectoryContainer extends Component {
 
   state = {
@@ -21,18 +44,15 @@ class DirectoryContainer extends Component {
   getUsers = number => {
     API.getUsers(number)
       .then((res) => {
-        this.setState({ users: res.data.results })
+        const sortedUsers = sortArrByValue(res.data.results, "firstName")
+        this.setState({ users: sortedUsers })
       })
       .catch(err => console.log("getUsers Error: ", err))
   }
 
   handleSort = (event) => {
-    /** TODO:
-     * Add onClick to <Sort>
-     * Get event.target data from select
-     * const sorted => sort allUsers arrays
-     * setState {users: sorted}
-     */
+    const sorted = sortArrByValue([...this.state.users], event.target.value)
+    this.setState({ users: sorted })
   }
 
   handleFilterChange = (event) => {
@@ -44,7 +64,7 @@ class DirectoryContainer extends Component {
     return (
       <div className="container-fluid h-100 py-3 bg-info p-0">
         <Header heading="Employee Directory" />
-        <Sort />
+        <Sort handleSort={this.handleSort} />
         <Filter key={1} users={this.state.users} handleFilterChange={this.handleFilterChange} />
         <Table>
           {this.state.users
