@@ -1,6 +1,6 @@
 {
   "name": "employee-directory",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://joeldore.github.io/employee-directory",
   "private": true,
   "dependencies": {
