@@ -7,13 +7,12 @@ function Filter({ users, handleFilterChange }) {
       <input
         id="filter"
         list="options"
-        placeholder="All Users"
+        placeholder="All"
         className="rounded pl-2"
         style={{ width: "fit-content" }}
         onChange={handleFilterChange}
       />
       <datalist id="options">
-        <option value="All Users" />
         {users.map((user) => (
           <option key={user.login.uuid} value={`${user.name.first} ${user.name.last}`}
           />
