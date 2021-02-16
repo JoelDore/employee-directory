@@ -62,7 +62,7 @@ class DirectoryContainer extends Component {
 
   render() {
     return (
-      <div className="container-fluid h-100 py-3 bg-info p-0">
+      <div className="container-fluid min-vh-100 py-3 bg-info p-0">
         <Header heading="Employee Directory" />
         <Sort handleSort={this.handleSort} />
         <Filter key={1} users={this.state.users} handleFilterChange={this.handleFilterChange} />
