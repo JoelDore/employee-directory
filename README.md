@@ -40,13 +40,10 @@
 ## Usage
 Currently deployed with [GitHub Pages](Deployed)
 
-1. When the page loads, a table will be populated with 20 random employees. Each employee card displays a photo, full name, employee ID, address, email and phone number.
-2. Select an option from the first dropdown to sort employees by first name (default), last name, or by ID number.
-3. Start typing in the filter input or select name from dropdown to search for a particular employee.
-
-<img src="./public/images/demo-mobile.gif" alt="Mobile Demo" width="33%" title="Mobile Demo"/>
-<img src="./public/images/demo-desktop.gif" alt="Mobile Demo" title="Mobile Demo"/>
-<br><br>
+1. When the page loads, a table will be populated with 20 random employees. Each employee card displays a photo, full name, employee ID, address, email and phone number.  
+2. Select an option from the first dropdown to sort employees by first name (default), last name, or by ID number.  
+3. Start typing in the filter input or select name from dropdown to search for a particular employee.  
+![Demo](./public/images/demos.gif "Demo")
 
 ## Technologies Used
 - [React](https://reactjs.org/)
