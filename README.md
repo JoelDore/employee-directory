@@ -19,7 +19,6 @@
 * [Usage](#Usage)  
 * [Technologies](#Technologies-Used)
 * [Contributing](#Contributing)  
-* [Reflection](#Reflection)  
 * [Future Scope](#Future-Scope)  
 * [Questions](#Questions)
 
@@ -57,9 +56,6 @@ Contributions welcome!
 2. Create a new branch  
 3. Commit/push your changes  
 4. Create a new pull request  
-
-## Reflection
-- 
 
 ## Future Scope
 - Cache users with service worker for offline functionality
