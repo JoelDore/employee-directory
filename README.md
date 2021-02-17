@@ -10,7 +10,6 @@
 
 ### React app that allows a manager to quickly access information on all their employees  
 
-
 ![Screenshots](./public/images/screenshots.png "Screenshots")
 
 </div>
@@ -73,9 +72,9 @@ This project is [MIT][License] licensed.
 <!-- Contact/Social Links -->
 <div align="center">
 
-[![email](public/logos/email.svg)](mailto:dore.joel.dore@gmail.com) 
-[![github](public/logos/github.svg)](https://github.com/JoelDore) 
-[![linkedin](public/logos/linkedin.svg)](https://www.linkedin.com/in/joeldore) 
+[![email](public/logos/email.svg)](mailto:dore.joel.dore@gmail.com "dore.joel.dore@gmail.com") 
+[![github](public/logos/github.svg)](https://github.com/JoelDore "/joeldore") 
+[![linkedin](public/logos/linkedin.svg)](https://www.linkedin.com/in/joeldore "/in/joeldore") 
 <a href="https://www.buymeacoffee.com/JoelDore" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-white.png" alt="Buy Me A Coffee" height="32"></a>
 
 </div>
