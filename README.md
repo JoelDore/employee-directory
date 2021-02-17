@@ -1,3 +1,5 @@
+<div align="center">
+
 # Employee Directory
 <div>
 <img src='https://img.shields.io/github/license/joeldore/employee-directory'>  
@@ -6,12 +8,12 @@
 <img src='https://img.shields.io/github/last-commit/joeldore/employee-directory'>
 </div>
 
-### React app that allows a manager to quickly access information on all their employees
+### React app that allows a manager to quickly access information on all their employees  
 
-<br>
-<img src="./public/images/screenshot-mobile.png" alt="Mobile Screenshot" width="32%" title="Mobile Screenshot" />
-<img src="./public/images/screenshot-desktop.png" alt="Desktop Screenshot" width="66%" title="Desktop Screenshot" />
-<br><br>
+
+![Screenshots](./public/images/screenshots.png "Screenshots")
+
+</div>
 
 ## Table of Contents  
 * [Features](#Features)  
@@ -43,7 +45,7 @@ Currently deployed with [GitHub Pages](Deployed)
 3. Start typing in the filter input or select name from dropdown to search for a particular employee.
 
 <img src="./public/images/demo-mobile.gif" alt="Mobile Demo" width="33%" title="Mobile Demo"/>
-<img src="./public/images/demo-desktop.gif" alt="Mobile Demo" width="67%" title="Mobile Demo"/>
+<img src="./public/images/demo-desktop.gif" alt="Mobile Demo" title="Mobile Demo"/>
 <br><br>
 
 ## Technologies Used
