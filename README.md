@@ -37,7 +37,7 @@
     ```
 
 ## Usage
-Currently deployed with [GitHub Pages](Deployed)
+Currently deployed with [GitHub Pages](https://joeldore.github.io/employee-directory)
 
 1. When the page loads, a table will be populated with 20 random employees. Each employee card displays a photo, full name, employee ID, address, email and phone number.  
 2. Select an option from the first dropdown to sort employees by first name (default), last name, or by ID number.  
