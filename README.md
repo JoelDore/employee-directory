@@ -6,6 +6,7 @@
 <img src='https://img.shields.io/github/repo-size/joeldore/employee-directory'>  
 <img src='https://img.shields.io/github/languages/top/joeldore/employee-directory'>
 <img src='https://img.shields.io/github/last-commit/joeldore/employee-directory'>
+    
 </div>
 
 ### React app that allows a manager to quickly access information on all their employees  
